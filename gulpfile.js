@@ -5,6 +5,7 @@ let concatCss = require('gulp-concat-css');
 let uglify = require('gulp-uglify');
 let rename = require('gulp-rename');
 let babel = require('gulp-babel');
+// let sass = require('gulp-sass');
 
 gulp.task('concatCss', function () {
   return gulp.src([
@@ -27,6 +28,12 @@ gulp.task('minifyScripts', ['babelScripts'], function() {
     .pipe(rename('primary.min.js'))
     .pipe(gulp.dest('js/'));
 });
+
+// gulp.task('compileSass', function () {
+//   return gulp.src('src/scss/application.scss')
+//     .pipe(sass())
+//     .pipe(gulp.dest('public/css'))
+// })
 
 gulp.task('build', ['concatCss', 'minifyScripts']);
 
