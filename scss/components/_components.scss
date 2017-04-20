@@ -1,0 +1,189 @@
+.introBubble {
+  border: 5px solid white;
+}
+
+.aboutBubble, .workSampleBubble, .testimonialsBubble, .resume {
+  transform: rotate(-10deg);
+}
+
+.bodyText {
+  font-family: 'Muli', sans-serif;
+  background-color: #eb0a60;
+  color: white;
+  text-align: left;
+  /*font-size: 18px;*/
+  padding: 25px 0;
+  @media #{$medium-breakpoint} {
+    width: 50%;
+    margin: auto;
+    border-left: 7px white solid;
+    border-right: 7px white solid;
+  }
+}
+
+
+.introTitleContainer {
+  padding-top: 130px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #eb0a60;
+  @media #{$large-breakpoint} {
+    padding-top: 66px;
+  }
+}
+
+
+.introBubble p {
+  font-size: 1em;
+  @media #{$medium-breakpoint} {
+    font-size: 1.15em;
+  }
+}
+
+#about h1 {
+  text-align: center;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  border: 4px white solid;
+  border-radius: 100%;
+}
+
+.resume:hover {
+  background: white;
+  color: #eb0a60;
+}
+
+.workSampleHover:hover h2 {
+  text-decoration: underline;
+}
+
+.aboutTitleContainer, .workSampleTitleContainer, .testimonialsTitleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-top: 25px;
+}
+
+.introBubble, .aboutBubble, .workSampleBubble, .testimonialsBubble {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+  background-color: #eb0a60;
+  color: white;
+  width: 260px;
+  height: 260px;
+  border-radius: 100%;
+  box-shadow: -5px 8px 6px -6px grey;
+  /*font-size: 18px;*/
+  border: 8px white solid;
+  @media #{$medium-breakpoint} {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+.workSampleText {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.bordered-worksample {
+  border-bottom: 7px white dotted;
+  padding-bottom: 40px;
+}
+
+.last-worksample {
+  padding-bottom: 40px;
+}
+
+.workSampleText h1 {
+  transform: rotate(-10deg);
+  padding: 30px 0;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.work-sample-content {
+  font-family: 'Muli', sans-serif;
+  background-color: #eb0a60;
+  color: white;
+  text-align: left;
+  margin-top: 20px;
+  /*font-size: 18px;*/
+  padding-bottom: 30px;
+  padding-top: 20px;
+  @media #{$medium-breakpoint} {
+    padding-bottom: 30px;
+    padding-top: 20px;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.contactBubble {
+  text-align: center;
+  padding: 10% 10%;
+  @media #{$medium-breakpoint} {
+    padding: 30px 0;
+  }
+}
+
+.profile-image {
+  width: 55%;
+  height: 55%;
+  border-radius: 100%;
+  border: 7px white solid;
+  @media #{$medium-breakpoint} {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.contactTitleContainer {
+  background-color: #eb0a60;
+  border-top: 7px white solid;
+  border-bottom: 7px white solid;
+}
+
+.contactIconContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  align-items: center;
+  font-size: 1.4em;
+  @media #{$medium-breakpoint} {
+    font-size: 1.6em;
+  }
+}
+
+.contactIconContainer a {
+  padding: 5%;
+  margin: 5%;
+  border: 3px white solid;
+  border-radius: 100%;
+  @media #{$medium-breakpoint} {
+    padding: 25px;
+    margin: 25px;
+  }
+}
+
+.contactIconContainer a:hover{
+  background: white;
+  color: #eb0a60;
+}

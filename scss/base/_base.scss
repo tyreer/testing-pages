@@ -24,21 +24,60 @@ body:before {
 
 h1 {
   font-size: 1.8em;
+  @media #{$medium-breakpoint} {
+    font-size: 2.26em;
+  }
 }
 
 h2 {
   font-size: 1.5em;
+  @media #{$medium-breakpoint} {
+    font-size: 2em;
+  }
 }
 
 h3 {
   font-size: 1.3em;
+  @media #{$medium-breakpoint} {
+    font-size: 1.6em;
+  }
 }
 
 p {
   font-size: 1.1em;
+  @media #{$medium-breakpoint} {
+    font-size: 1.5em;
+  }
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+/// —————————————————————————————————————————————————————————————————————
+// Utility classes
+/// —————————————————————————————————————————————————————————————————————
+
+.center {
+  text-align: center;
+}
+
+/*Eliminate scroll option on desktop browsers when main-nav is full screen*/
+.disable-scroll {
+  overflow: hidden;
+}
+
+/*Allows links within page to arrive at desired positioning */
+#about, #workSamples, #testimonials, #contact, #aboutJump, #workJump, #testimonialJump {
+  padding-top: 140px;
+  margin-top: -140px;
+}
+
+#navBars, a {
+  cursor: crosshair;
+}
+
+.shadow {
+  box-shadow: 0 8px 10px -6px grey;
 }
