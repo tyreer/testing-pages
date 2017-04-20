@@ -14,11 +14,10 @@
   /*font-size: 18px;*/
   padding: 25px 0;
   @media #{$medium-breakpoint} {
-    width: 50%;
+    padding: 25px 0;
+    width: 100%;
     margin: auto;
-    border-left: 7px white solid;
-    border-right: 7px white solid;
-  }
+  };
 }
 
 

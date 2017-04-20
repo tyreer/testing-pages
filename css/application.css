@@ -1,21 +1,30 @@
-/*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+/* Document
+   ========================================================================== */
 html {
-  line-height: 1.15;
+  font-family: sans-serif;
   /* 1 */
-  -ms-text-size-adjust: 100%;
+  line-height: 1.15;
   /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 3 */ }
 
 /* Sections
    ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
 /**
  * Add the correct display in IE 9-.
  */
@@ -88,7 +97,15 @@ a {
   /* 2 */ }
 
 /**
- * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
@@ -192,14 +209,22 @@ svg:not(:root) {
 /* Forms
    ========================================================================== */
 /**
- * Remove the margin in Firefox and Safari.
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
  */
 button,
 input,
 optgroup,
 select,
 textarea {
-  margin: 0; }
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
 
 /**
  * Show the overflow in IE.
@@ -249,6 +274,14 @@ button:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
@@ -471,6 +504,12 @@ a {
 
 .body-padder {
   padding: 0 50px; }
+  @media (min-width: 600px) {
+    .body-padder {
+      width: 50%;
+      margin: auto;
+      border-left: 7px white solid;
+      border-right: 7px white solid; } }
 
 .main-nav {
   position: fixed;
@@ -551,10 +590,9 @@ a {
   padding: 25px 0; }
   @media (min-width: 600px) {
     .bodyText {
-      width: 50%;
-      margin: auto;
-      border-left: 7px white solid;
-      border-right: 7px white solid; } }
+      padding: 25px 0;
+      width: 100%;
+      margin: auto; } }
 
 .introTitleContainer {
   padding-top: 130px;

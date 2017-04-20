@@ -1,3 +1,9 @@
 .body-padder {
   padding: 0 50px;
+  @media #{$medium-breakpoint} {
+    width: 50%;
+    margin: auto;
+    border-left: 7px white solid;
+    border-right: 7px white solid;
+  }
 }
