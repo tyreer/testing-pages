@@ -2,18 +2,16 @@
 // Global Variables
 // —————————————————————————————————————————————————————————————————————
 
-// Font Stacks
+// —————————————————————————————————————————————————————————————————————
+// Font families
+// —————————————————————————————————————————————————————————————————————
 
-// Font Weights
+$font-url--google: 'https://fonts.googleapis.com/css?family=Abril+Fatface|Muli';
+@import url($font-url--google);
 
-// Descriptive Base Colors
+$font-family--sans-serif   : 'Muli', Helvetica, Arial, sans-serif;
+$font-family--fantasy      : 'Abril Fatface', fantasy;
 
-// Color Usage
-
-// Text
-
-$base__font-size : 16px;
-$base__line      : 24px;
 
 // —————————————————————————————————————————————————————————————————————
 // Media query breakpoints
