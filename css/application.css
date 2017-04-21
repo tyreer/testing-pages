@@ -564,7 +564,7 @@ a {
   justify-content: center; }
 
 .navContainerToggleOn a, .navContainerToggleOn p {
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", Helvetica, Arial, sans-serif;
   color: #eb0a60;
   /*font-size: 24px;*/
   padding: 10px; }
@@ -583,7 +583,7 @@ a {
   transform: rotate(-10deg); }
 
 .bodyText {
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", Helvetica, Arial, sans-serif;
   background-color: #eb0a60;
   color: white;
   text-align: left;
@@ -646,7 +646,7 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", Helvetica, Arial, sans-serif;
   background-color: #eb0a60;
   color: white;
   width: 260px;
@@ -678,7 +678,7 @@ a {
   font-family: "Abril Fatface", fantasy; }
 
 .work-sample-content {
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", Helvetica, Arial, sans-serif;
   background-color: #eb0a60;
   color: white;
   text-align: left;

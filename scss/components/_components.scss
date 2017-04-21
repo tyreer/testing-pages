@@ -7,7 +7,7 @@
 }
 
 .bodyText {
-  font-family: 'Muli', sans-serif;
+  font-family: $font-family--sans-serif;
   background-color: #eb0a60;
   color: white;
   text-align: left;
@@ -80,7 +80,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: 'Muli', sans-serif;
+  font-family: $font-family--sans-serif;
   background-color: #eb0a60;
   color: white;
   width: 260px;
@@ -117,7 +117,7 @@
 }
 
 .work-sample-content {
-  font-family: 'Muli', sans-serif;
+  font-family: $font-family--sans-serif;
   background-color: #eb0a60;
   color: white;
   text-align: left;
