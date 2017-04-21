@@ -456,11 +456,6 @@ a {
 .disable-scroll {
   overflow: hidden; }
 
-/*Allows links within page to arrive at desired positioning */
-#about, #workSamples, #testimonials, #contact, #aboutJump, #workJump, #testimonialJump {
-  padding-top: 140px;
-  margin-top: -140px; }
-
 #navBars, a {
   cursor: crosshair; }
 
@@ -511,6 +506,11 @@ a {
       margin: auto;
       border-left: 7px white solid;
       border-right: 7px white solid; } }
+
+/*Allows links within page to arrive at desired positioning */
+#about, #workSamples, #testimonials, #contact, #aboutJump, #workJump, #testimonialJump {
+  padding-top: 140px;
+  margin-top: -140px; }
 
 .main-nav {
   position: fixed;
@@ -565,8 +565,7 @@ a {
 
 .navContainerToggleOn a, .navContainerToggleOn p {
   font-family: "Muli", Helvetica, Arial, sans-serif;
-  color: #eb0a60;
-  /*font-size: 24px;*/
+  color: #ee005e;
   padding: 10px; }
 
 #navOptions {
@@ -574,21 +573,22 @@ a {
 
 #navBars {
   padding: 0px 50px;
-  color: #eb0a60; }
+  color: #ee005e; }
 
 .introBubble {
-  border: 5px solid white; }
+  border: 5px solid white;
+  box-shadow: 0 8px 10px -6px grey; }
 
 .aboutBubble, .workSampleBubble, .testimonialsBubble, .resume {
   transform: rotate(-10deg); }
 
 .bodyText {
   font-family: "Muli", Helvetica, Arial, sans-serif;
-  background-color: #eb0a60;
+  background-color: #ee005e;
   color: white;
   text-align: left;
-  /*font-size: 18px;*/
-  padding: 25px 0; }
+  padding: 25px 0;
+  box-shadow: 0 8px 10px -6px grey; }
   @media (min-width: 600px) {
     .bodyText {
       padding: 25px 0;
@@ -601,7 +601,8 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background: #eb0a60; }
+  background: #ee005e;
+  box-shadow: 0 8px 10px -6px grey; }
   @media (min-width: 830px) {
     .introTitleContainer {
       padding-top: 66px; } }
@@ -627,7 +628,7 @@ a {
 
 .resume:hover {
   background: white;
-  color: #eb0a60; }
+  color: #ee005e; }
 
 .workSampleHover:hover h2 {
   text-decoration: underline; }
@@ -647,13 +648,12 @@ a {
   justify-content: center;
   text-align: center;
   font-family: "Muli", Helvetica, Arial, sans-serif;
-  background-color: #eb0a60;
+  background-color: #ee005e;
   color: white;
   width: 260px;
   height: 260px;
   border-radius: 100%;
   box-shadow: -5px 8px 6px -6px grey;
-  /*font-size: 18px;*/
   border: 8px white solid; }
   @media (min-width: 600px) {
     .introBubble, .aboutBubble, .workSampleBubble, .testimonialsBubble {
@@ -679,13 +679,13 @@ a {
 
 .work-sample-content {
   font-family: "Muli", Helvetica, Arial, sans-serif;
-  background-color: #eb0a60;
+  background-color: #ee005e;
   color: white;
   text-align: left;
   margin-top: 20px;
-  /*font-size: 18px;*/
   padding-bottom: 30px;
-  padding-top: 20px; }
+  padding-top: 20px;
+  box-shadow: 0 8px 10px -6px grey; }
   @media (min-width: 600px) {
     .work-sample-content {
       padding-bottom: 30px;
@@ -711,7 +711,7 @@ a {
       height: 250px; } }
 
 .contactTitleContainer {
-  background-color: #eb0a60;
+  background-color: #ee005e;
   border-top: 7px white solid;
   border-bottom: 7px white solid; }
 
@@ -739,4 +739,4 @@ a {
 
 .contactIconContainer a:hover {
   background: white;
-  color: #eb0a60; }
+  color: #ee005e; }

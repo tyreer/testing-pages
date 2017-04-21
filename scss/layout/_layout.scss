@@ -7,3 +7,9 @@
     border-right: 7px white solid;
   }
 }
+
+/*Allows links within page to arrive at desired positioning */
+#about, #workSamples, #testimonials, #contact, #aboutJump, #workJump, #testimonialJump {
+  padding-top: 140px;
+  margin-top: -140px;
+}
